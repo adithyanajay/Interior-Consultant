@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Interior Consultant</title>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="./assets/devchallenges.png" type="image/x-icon">
 </head>
+
 <body>
   <div class="app">
     <nav class="nav">
       <h3 class="logo">
         This interior
       </h3>
-      <div class="hamburger" id="hamburger" onclick="openNav">
+      <div class="button hamburger" id="hamburger" onclick="openNav">
         <img src="./assets/menu.svg" alt="hamburger-menu">
       </div>
       <ul class="navlinks" id="navlinks">
-        <div class="button" onclick="closeNav" id="close">
+        <div class="button close" onclick="closeNav" id="close">
           <img src="./assets/close.svg" alt="close-icon">
         </div>
         <li class="navlink"><a href="#">Home</a></li>
@@ -26,7 +28,55 @@
         <li class="navlink"><a href="#">Contact</a></li>
       </ul>
     </nav>
+
+    <main class="main">
+      <div class="content">
+        <h1 class="main-heading">Modern interior</h1>
+        <p class="main-para">A full-Service residential & commercial interior design and staging company offering
+          professional organizing & eco-services.
+        </p>
+        <a href="#" class="main-link">
+          Read more <span class="arrow"><img src="./assets/arrow.svg" alt=""></span>
+        </a>
+      </div>
+
+      <section class="section-1">
+        <div>
+          <div class="section-1-img">
+            <img src="./assets/photo1.png" alt="">
+          </div>
+
+          <div class="card">
+            <div class="card-profile">
+              <span class="card-profile-img">
+                <img src="./assets/photo2.png" alt="Aliza Webber's picture">
+              </span>
+
+              <div class="card-profile-details">
+                <h3 class="card-profile-heading">
+                  Aliza Webber
+                </h3>
+                <p class="card-profile-para">
+                  Interior designer
+                </p>
+              </div>
+            </div>
+            <div class="card-data">
+              <h2 class="card-data-text">Designed in 2020 by Aliza Webber</h2>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>created by <a href="https://devchallenges.io/portfolio/adithyanajay">Adithya</a> - <a
+          href="https://devchallenges.io/">devchallenges.io</a></p>
+    </footer>
   </div>
 </body>
 <script src="./scripts.js"></script>
+
 </html>

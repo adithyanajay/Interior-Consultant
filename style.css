@@ -7,9 +7,7 @@ body {
 }
 .app {
     background-color: var(--black);
-    width: 100vw;
-    overflow: hidden;
-    height: 100vh;
+    width: 100%;
     padding: 1rem;
 }
 .nav {
@@ -21,10 +19,13 @@ body {
     background-color: var(--black);
     z-index: 2;
 }
-.button {
+.close {
     position: absolute;
     top: 2rem;
     right: 2rem;
+}
+
+.button {
     cursor: pointer;
 }
 .navlinks {
@@ -40,7 +41,8 @@ body {
     height: 100vh;
     background-color: var(--black);
     right: -100%;
-    transition: .5s ease-in-out right;
+    transition: .3s ease-in-out right;
+    z-index: 10;
 }
 
 .active {
@@ -68,4 +70,226 @@ body {
     padding: 1rem;
     border: 2px solid var(--white);
     font-size: var(--text-base);
+}
+
+.content {
+    margin-top: 3rem;
+}
+
+.main-heading {
+    font-family: var(--lora);
+    font-size: var(--text-4xl);
+    margin-bottom: 2rem;
+    font-weight: lighter;
+}
+
+.main-para {
+    font-size: var(--text-base);
+    padding-right: 2.5rem;
+}
+
+.main-link {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: fit-content;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: var(--text-lg);
+    margin-bottom: 2rem;
+}
+
+.arrow {
+    padding-top: .4rem;
+    width: 2rem;
+}
+
+.arrow>img {
+    width: 100%;
+}
+
+.section-1-img{
+    width: 100%;
+}
+
+.section-1-img>img {
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--black);
+    transform: translate(5%, -40%);
+    margin: auto;
+    width: 85%;
+    max-width: 400px;
+    -webkit-box-shadow: 0px 10px 29px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 29px -6px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 29px -6px rgba(0,0,0,0.75);
+    
+}
+
+.card-profile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-profile-img {
+    width: 3rem;
+}
+
+.card-profile-img>img {
+    width: 100%;
+    border-radius: 100%;
+}
+.card-profile-details {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    gap: .2rem;
+    width: 100%;
+    padding: .5rem 0;
+}
+.card-profile-heading {
+    color: var(--white);
+    font-size: var(--text-sm);
+    font-weight: lighter;
+    
+}
+.card-profile-para {
+    font-size: var(--text-xs);
+    color: var(--grey);
+}
+.card-data {
+    margin-right: auto;
+    width: 80%;
+    margin-top: 1rem;
+}
+.card-data-text {
+    font-size: var(--text-lg);
+    font-family: var(--lora);
+}
+
+.footer {
+    color: var(--secondary-grey);
+    width: 100%;
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1rem 0;
+    font-size: var(--text-sm);
+} 
+.footer>p>a {
+    color: var(--secondary-grey);
+    text-decoration: underline;
+}
+
+
+@media (min-width:768px) {
+    .app {
+        padding: 1rem 2rem ;
+    }
+
+    .logo {
+        font-size: var(--text-xl);
+    }
+    .main-heading {
+        font-size: var(--text-5xl);
+    }
+    .main-para {
+        width: 80%;
+        font-size: var(--text-xl);
+    }
+    .card {
+        transform: translate(30%, -40%);
+        padding: 2rem 3rem;
+    }
+    .card-profile-heading {
+        font-size: var(--text-lg);
+    }
+    .card-profile-para {
+        font-size: var(--text-sm);
+    }
+    .card-profile-img {
+        width: 4rem;
+    }
+    .card-data-text {
+        font-size: var(--text-2xl);
+    }
+    .footer {
+        padding-bottom: 1rem;
+    }
+}
+@media (min-width:1024px) {
+   
+    .main {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+        margin-top: 3rem;
+    
+    }
+    .content {
+        width: 50%;
+       
+        
+    }
+    .section-1 {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .card {
+        transform: translate(20%, -40%);
+    }
+    .section-1-img {
+        width: 100%;
+    }
+    .footer {
+        font-size: var(--text-base);
+    }
+
+}
+ 
+@media (min-width:1224px) {
+    .nav {
+        margin: auto;
+        max-width: 1700px;
+    }
+    .app {
+        padding: 1rem 3rem;
+    }
+    .main {
+        max-width: 1700px;
+    }
+    .navlinks {
+        position: static;
+        right: 0;
+        width: auto;
+        height: 10vh;
+        padding: 0;
+        transition: none;
+        flex-direction: row;
+        gap: 7rem;
+    }
+    
+    .button {
+        display: none;
+    }
+    .navlink {
+        font-size: var(--text-xl);
+    }
 }
