@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    /* ----------------------------------------------------------------- */
+    /* default font sizes */
+   --text-xs: 0.75rem;
+   --text-sm: 0.875rem;
+   --text-base: 1rem;
+   --text-lg: 1.125rem;
+   --text-xl: 1.25rem;
+   --text-2xl: 1.5rem;
+   --text-3xl: 1.875rem;
+   --text-4xl: 2.25rem;
+   --text-5xl: 3rem;
+   --text-6xl: 3.75rem;
+   --text-7xl: 4.5rem;
+   --text-8xl: 6rem;
+   --text-9xl: 8rem;
+
+   /* Responsive design default breakpoints  */
+   --sm: 640px;
+   --md: 768px;
+   --lg: 1024px;
+   --xl: 1280px;
+
+/* ------------------------------------------------------------------    */
+
+
+
+    /* colors */
+    --black: #181719;
+    --white: #FFFFFF;
+    /* fonts */
+    --crimson:'Crimson Pro', serif;
+    --lora: 'Lora', serif;
+    --montserrat: 'Montserrat', sans-serif;
+  
+}
+
+
+/* Default font family decalred and other default values*/
+* {
+    font-family: var(--montserrat);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
