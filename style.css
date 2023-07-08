@@ -238,19 +238,25 @@ body {
         justify-content: space-around;
         margin: 0 auto;
         margin-top: 3rem;
-    
+        height: 90vh;
+        
     }
     .content {
         width: 50%;
-       
-        
+        height: 90vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
     }
     .section-1 {
-        width: 60%;
+        overflow: hidden;
+        width: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-       
+        height: 90vh;
     }
     .card {
         transform: translate(20%, -40%);
